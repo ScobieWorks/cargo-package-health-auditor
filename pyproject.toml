@@ -1,0 +1,30 @@
+[project]
+name = "cargo-package-health-auditor"
+version = "0.1.0"
+description = "A lightweight offline Rust workspace metadata auditor."
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [{ name = "Orion Builder", email = "builder@example.com" }]
+classifiers = ["Programming Language :: Python :: 3", "License :: OSI Approved :: MIT License", "Operating System :: OS Independent"]
+
+[project.license]
+file = "LICENSE"
+
+[project.scripts]
+cargo-package-health-auditor = "cargo_package_health_auditor.cli:main"
+
+[project.urls]
+Repository = "https://github.com/ScobieWorks/cargo-package-health-auditor"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool]
+
+[tool.setuptools]
+
+[tool.setuptools.packages]
+
+[tool.setuptools.packages.find]
+where = ["src"]
